@@ -1,4 +1,5 @@
 #Based on CNN tutorial: http://adventuresinmachinelearning.com/keras-tutorial-cnn-11-lines/
+#Link to original repository with code examples: https://github.com/adventuresinML/adventures-in-ml-code
 
 from __future__ import print_function
 import keras
@@ -57,5 +58,4 @@ model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
           verbose=1,
-          validation_data=(x_test, y_test),
-          callbacks=[history])
+          validation_data=(x_test, y_test))
